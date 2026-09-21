@@ -1,0 +1,94 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[margin=2cm, top=2cm]{geometry}
+\usepackage{tikz}
+  \usetikzlibrary{angles, quotes}
+  \usetikzlibrary{arrows.meta}
+  \usetikzlibrary{positioning}
+\usepackage{pgfplots}
+  \pgfplotsset{compat=1.18}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{tocloft}
+  \renewcommand{\cftsecdotsep}{\cftdotsep}
+  \cftpagenumbersoff{subsection}
+\usepackage[normalem]{ulem}
+\usepackage{dashundergaps}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+
+\definecolor{defmain}{HTML}{1d1280}
+\definecolor{defbg}{HTML}{F4F8F7}
+\definecolor{rpmain}{HTML}{790a73}
+\definecolor{rpbg}{HTML}{F5F5F8}
+\definecolor{zgmain}{HTML}{146609}
+\definecolor{zgbg}{HTML}{F4F6F8}
+
+\newtcolorbox{defbox}[2][]{
+    enhanced,
+    colback=defbg,
+    colframe=defmain,
+    arc=3mm,
+    boxrule=0.6pt,
+    leftrule=1mm,
+    before upper={\textbf{\sffamily\color{defmain}#2}\par},
+    #1
+}
+
+\newtcolorbox{rpbox}[2][]{
+    enhanced,
+    colback=rpbg,
+    colframe=rpmain,
+    arc=3mm,
+    boxrule=0.6pt,
+    leftrule=1mm,
+    before upper={\textbf{\sffamily\color{rpmain}#2}\par},
+    #1
+}
+
+\newtcolorbox{zgledbox}[2][]{
+    enhanced,
+    colback=zgbg,
+    colframe=zgmain,
+    arc=3mm,
+    boxrule=0.6pt,
+    leftrule=1mm,
+    before upper={\textbf{\sffamily\color{zgmain}#2}\par},
+    #1
+}
+
+\title{Zapiski za MAT v 3. letniku}
+\author{Gašper Mikložič}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Kvadratna neenačba}
+
+\begin{defbox}{Definicija}
+    \centering \large
+    Enačba oblike:
+    $$ ax^2 + bx + c > 0 $$
+    $$ ax^2 + bx + c < 0 $$
+    $$ ax^2 + bx + c \leq 0 $$
+    $$ ax^2 + bx + c \geq 0 $$ \\
+    Kjer $a$ \neq 0.\\ 
+    Rešitev neenačbe je interval, unija intervalov ali prazna množica.
+\end{defbox}
+
+\begin{zgledbox}{Način reševanja}
+    \centering
+    $2x^2 < -4x + 8$\\
+    $2x^2 +4x -8 < 0$\\
+    $x^2 + 3x - 4 < 0$\\
+    Tukaj rešimo kot kvadratno enačbo.\\
+    $x_1=-4$\\
+    $x_2=1$\\
+    Nato zapišemo interval. Če je znak je manjše(kot v tem primeru)\\ zapišemo interval, kje je graf funkcije pod abscisno osjo. Dobimo rešitev.\\[1mm]
+    \large \boxed{$x \in (-4, 1)$}
+\end{zgledbox}
+
+\end{document}
