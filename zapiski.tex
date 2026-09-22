@@ -70,19 +70,19 @@
 
 \begin{defbox}{Definicija}
     \centering \large
-    Enačba oblike:
+    Neenačba oblike:
     $$ ax^2 + bx + c > 0 $$
     $$ ax^2 + bx + c < 0 $$
     $$ ax^2 + bx + c \leq 0 $$
     $$ ax^2 + bx + c \geq 0 $$ \\
-    Kjer $a$ \neq 0.\\ 
+    Kjer $a$ $\neq$ 0.\\ 
     Rešitev neenačbe je interval, unija intervalov ali prazna množica.
 \end{defbox}
 
 \begin{zgledbox}{Način reševanja}
     \centering
-    $2x^2 < -4x + 8$\\
-    $2x^2 +4x -8 < 0$\\
+    $2x^2 < -6x + 8$\\
+    $2x^2 +6x -8 < 0$\\
     $x^2 + 3x - 4 < 0$\\
     Tukaj rešimo kot kvadratno enačbo,\\ z Vietovim pravilom ali formulo za kvadratno enačbo.\\
     $x_1=-4$\\
@@ -97,11 +97,11 @@
 
 \begin{defbox}{Definicija}
     \centering
-    Komplesna števila, označena s simbolom $\mathbb{C}$, so vsa števila, ki jih lahko opišemo s predpisom:\\[8pt]
+    Kompleksna števila, označena s simbolom $\mathbb{C}$, so vsa števila, ki jih lahko opišemo s predpisom:\\[8pt]
     $z=a+bi$\\[8pt]
-    Kjer sta $a$ in $b$ realni števili in je $i^2$ enak $-1$\\[10pt]
+    Kjer sta $a$ in $b$ realni števili in je $i^2$(imaginarna enota na kvadrat) enak $-1$\\[10pt]
     Vsako število lahko tudi razdelimo na realno in imaginarno komponento:\\
-    $\text{Re}(z)=a$ in $\text{Re}(z)=b$
+    $\text{Re}(z)=a$ in $\text{Im}(z)=b$
 \end{defbox}
 
 \begin{rpbox}{Graf}
@@ -123,9 +123,9 @@
         \coordinate (I) at (1,0);
         \coordinate (J) at (0,1);
         \coordinate (Z) at (2,3);
-        \draw[->,red,ultra thick] (O) -- (I) node[above] {$a$};
-        \draw[->,blue,ultra thick] (O) -- (J) node[right] {$b$};
-        \draw[->,defmain,ultra thick] (O) -- (Z) node[above] {$z=a+bi$};
+        \draw[-,red,ultra thick] (O) -- (I) node[above] {$a$};
+        \draw[-,blue,ultra thick] (O) -- (J) node[right] {$b$};
+        \draw[-,defmain,ultra thick] (O) -- (Z) node[above] {$z=a+bi$};
     \end{axis}
 \end{tikzpicture}
 \end{rpbox}
