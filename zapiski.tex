@@ -84,10 +84,10 @@
     $2x^2 < -4x + 8$\\
     $2x^2 +4x -8 < 0$\\
     $x^2 + 3x - 4 < 0$\\
-    Tukaj rešimo kot kvadratno enačbo.\\
+    Tukaj rešimo kot kvadratno enačbo,\\ z Vietovim pravilom ali formulo za kvadratno enačbo.\\
     $x_1=-4$\\
     $x_2=1$\\
-    Nato zapišemo interval. Če je znak je manjše(kot v tem primeru)\\ zapišemo interval, kje je graf funkcije pod abscisno osjo. Dobimo rešitev.\\[1mm]
+    Nato zapišemo interval. Če je znak je manjše(kot v tem primeru)\\ zapišemo interval, kdaj graf funkcije leži pod abscisno osjo.\\ Če je znak večje, zapišemo, kdaj graf leži nad abscisno osjo. Dobimo rešitev.\\[1mm]
     \large \boxed{$x \in (-4, 1)$}
 \end{zgledbox}
 
@@ -99,7 +99,35 @@
     \centering
     Komplesna števila, označena s simbolom $\mathbb{C}$, so vsa števila, ki jih lahko opišemo s predpisom:\\[8pt]
     $z=a+bi$\\[8pt]
-    Kjer sta $a$ in $b$ realni števili in je $i^2$ enak $-1$
+    Kjer sta $a$ in $b$ realni števili in je $i^2$ enak $-1$\\[10pt]
+    Vsako število lahko tudi razdelimo na realno in imaginarno komponento:\\
+    $\text{Re}(z)=a$ in $\text{Re}(z)=b$
 \end{defbox}
+
+\begin{rpbox}{Graf}
+    \centering
+    Vsa kompleksna števila lahko tudi ponazorimo na grafu\\ kjer je abscisna os realna komponenta in ordinatna os imaginarna komponenta.
+    \begin{tikzpicture}[scale=1]
+    \begin{axis}
+        [
+        axis lines = middle,
+        grid = both,
+        xmin = -5, xmax = 5,
+        ymin = -5, ymax = 5,
+        xtick={-5,...,5},
+        ytick={-5,...,5},
+        yticklabel={\pgfmathprintnumber{\tick}i},
+        unit vector ratio=1 1 1
+        ]
+        \coordinate (O) at (0,0);
+        \coordinate (I) at (1,0);
+        \coordinate (J) at (0,1);
+        \coordinate (Z) at (2,3);
+        \draw[->,red,ultra thick] (O) -- (I) node[above] {$a$};
+        \draw[->,blue,ultra thick] (O) -- (J) node[right] {$b$};
+        \draw[->,defmain,ultra thick] (O) -- (Z) node[above] {$z=a+bi$};
+    \end{axis}
+\end{tikzpicture}
+\end{rpbox}
 
 \end{document}
