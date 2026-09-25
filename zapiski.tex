@@ -68,9 +68,11 @@
 
 \section{Kvadratna neenačba}
 
-\begin{defbox}{Definicija}
+\begin{minipage}[t]{0.45\textwidth}
+\vspace{0pt}
+\begin{defbox}[equal height group=neenacba]{Definicija}
     \centering \large
-    Neenačba oblike:
+    Neenačba ima oblike:
     $$ ax^2 + bx + c > 0 $$
     $$ ax^2 + bx + c < 0 $$
     $$ ax^2 + bx + c \leq 0 $$
@@ -78,8 +80,11 @@
     Kjer $a$ $\neq$ 0.\\ 
     Rešitev neenačbe je interval, unija intervalov ali prazna množica.
 \end{defbox}
-
-\begin{zgledbox}{Način reševanja}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+\vspace{0pt}
+\begin{zgledbox}[equal height group=neenacba]{Način reševanja}
     \centering
     $2x^2 < -6x + 8$\\
     $2x^2 +6x -8 < 0$\\
@@ -90,11 +95,11 @@
     Nato zapišemo interval. Če je znak je manjše(kot v tem primeru)\\ zapišemo interval, kdaj graf funkcije leži pod abscisno osjo.\\ Če je znak večje, zapišemo, kdaj graf leži nad abscisno osjo. Dobimo rešitev.\\[1mm]
     \large \boxed{$x \in (-4, 1)$}
 \end{zgledbox}
-
-\newpage
+\end{minipage}
 
 \section{Kompleksna števila}
-
+\begin{minipage}[t]{0.45\textwidth}
+\vspace{0pt}
 \begin{defbox}{Definicija}
     \centering
     Kompleksna števila, označena s simbolom $\mathbb{C}$, so vsa števila, ki jih lahko opišemo s predpisom:\\[8pt]
@@ -103,10 +108,17 @@
     Vsako število lahko tudi razdelimo na realno in imaginarno komponento:\\
     $\text{Re}(z)=a$ in $\text{Im}(z)=b$
 \end{defbox}
-
+\begin{zgledbox}{Primer kompleksnega števila}
+\centering
+$z=4-8i$
+\end{zgledbox}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+\vspace{0pt}
 \begin{rpbox}{Graf}
     \centering
-    Vsa kompleksna števila lahko tudi ponazorimo na grafu\\ kjer je abscisna os realna komponenta in ordinatna os imaginarna komponenta.
+    Vsa kompleksna števila lahko tudi ponazorimo na kompleksni ravnini kjer je abscisna os realna komponenta in ordinatna os imaginarna komponenta.
     \begin{tikzpicture}[scale=1]
     \begin{axis}
         [
@@ -129,5 +141,33 @@
     \end{axis}
 \end{tikzpicture}
 \end{rpbox}
+\end{minipage}
+
+\newpage
+
+\subsection{Računanje s kompleksnimi števili}
+
+\begin{minipage}[t]{0.45\textwidth}
+\vspace{0pt}
+\begin{defbox}[equal height group=racunanje]{Seštevanje in odštevanje}
+\begin{align*}
+z&=a+bi\\
+w&=c+di\\
+z+w=a+bi+&c+di=\boxed{a+c+(b+d)i}\\[8pt]
+z-w=&a+bi-(c+di)=\\
+a+bi-c-&di=\boxed{a-c+(b-d)i}
+\end{align*}
+\end{defbox}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+\vspace{0pt}
+\begin{defbox}[equal height group=racunanje]{Množenje s skalarjem}
+\begin{align*}
+z=a+&bi \ \ \ k \in \mathbb{R}\\
+z \cdot k = k(a+&bi)=ka+kbi
+\end{align*}
+\end{defbox}
+\end{minipage}
 
 \end{document}
