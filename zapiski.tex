@@ -183,5 +183,37 @@ a+c-(b+d)i&=a+c-(b+d)i
 \end{align*}
 \end{zgledbox}
 \end{minipage}
+\begin{defbox}{Deljenje}
+\begin{align*}
+\frac{z}{w}=\frac{a+bi}{c+di}\hspace{8pt} \text{Racionaliziramo ulomek s}&\text{ tem, da ga razširimo s konjugirano vrednostjo }w\\
+&\boxed{\frac{(a+bi)(c-di)}{c^2+d^2}}
+\end{align*}
+\end{defbox}
+\subsection{Grafi}
+\begin{zgledbox}{Absolutna vrednost}
+\center
+\begin{tikzpicture}
+\begin{axis}
+[
+axis lines=middle,
+grid=both,
+xmin=-5, xmax=5,
+ymin=-5, ymax=5,
+xtick={-5,...,5},
+ytick={-5,...,5},
+unit vector ratio=1 1 1,
+xticklabels={}, yticklabels={},
+xlabel={$\mathrm{Re}$},
+ylabel={$\mathrm{Im}$},
+]
+\fill[blue, opacity=0.2, even odd rule] (-5,-5) rectangle (5,5) (0,0) circle (2);
+\draw[blue, dashed, thick] (0,0) circle (2);
+\node[below] at (1,0) {$1$};
+\node[left]  at (0,1) {$i$};
+\end{axis}
+\end{tikzpicture}
+
+Tako zgleda neenačba $|z|>2$
+\end{zgledbox}
 
 \end{document}
